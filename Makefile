@@ -108,3 +108,6 @@ detect_changed_source_translations: ## Check if translation files are up-to-date
 
 docs:
 	cd docs && make html
+
+check_keywords:
+	python manage.py check_reserved_keywords --override_file db_keyword_overrides.yml
